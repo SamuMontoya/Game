@@ -17,22 +17,37 @@
   <body>
     <section id="start-game">
       <h1>CombaTitems</h1>
-      <button id="start-btn">Start</button>
+      <button class="btn" id="start-btn">Start</button>
     </section>
 
     <section id="select-avatar">
       <h2>Choose your avatar...</h2>
+      <div class="options-avatar">
+        <input type="radio" name="avatar" id="samu" />
+        <label for="samu">
+          <img src="./assets/avatars/samu/samu.png" alt="samu-avatar" />
+          <p>Samu</p>
+        </label>
 
-      <label for="samu">Samu</label>
-      <input type="radio" name="avatar" id="samu" />
+        <input type="radio" name="avatar" id="gary" />
+        <label for="gary">
+          <img src="./assets/avatars/gary/gary.png" alt="gary-avatar" />
+          <p>Gary</p>
+        </label>
 
-      <label for="gary">Gary</label>
-      <input type="radio" name="avatar" id="gary" />
-
-      <label for="teban">Teban</label>
-      <input type="radio" name="avatar" id="teban" />
-
-      <button id="avatar-btn">Select</button>
+        <input type="radio" name="avatar" id="teban" />
+        <label for="teban">
+          <img src="./assets/avatars/teban/teban.png" alt="teban-avatar" />
+          <p>Teban</p>
+        </label>
+      </div>
+      <button class="btn" id="avatar-btn">Select</button>
+      <div class="popup" id="popup">
+        <img src="./assets/warning.png" alt="warning-icon">
+        <h2>Stoop!!!</h2>
+        <p>You haven't select any avatar, please choose someone...</p>
+        <button id="popup-btn" class="btn" type="button">OK</button>
+      </div>
     </section>
 
     <section id="select-attack">

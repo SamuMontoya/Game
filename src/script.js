@@ -9,15 +9,16 @@ let enemyLives = 3;
 let isSelected = false;
 
 const startGame = () => {
-    sectionAvatar.style.display = 'block'
-    sectionStart.style.display = 'none'
+  sectionAvatar.style.display = "block";
+  sectionStart.style.display = "none";
 };
 
 const selectAvatar = () => {
-  let inputSamu = $("samu");
-  let inputGary = $("gary");
-  let inputTeban = $("teban");
-  let spanPlayer = $("player-avatar");
+  const inputSamu = $("samu");
+  const inputGary = $("gary");
+  const inputTeban = $("teban");
+  const spanPlayer = $("player-avatar");
+  const popup = $("popup");
 
   if (inputSamu.checked) {
     spanPlayer.innerHTML = "Samu";
@@ -29,7 +30,7 @@ const selectAvatar = () => {
     spanPlayer.innerHTML = "Teban";
     isSelected = true;
   } else {
-    alert("Please Select and Avatar...");
+    popup.classList.add("open-popup");
   }
 
   if (isSelected) {
@@ -144,6 +145,7 @@ const wandButton = $("wand-btn");
 const cubeButton = $("cube-btn");
 const sectionReplay = $("replay");
 const replayButton = $("replay-btn");
+const okPopup = $('popup-btn')
 
 sectionAvatar.style.display = "none";
 sectionAttacks.style.display = "none";
@@ -151,7 +153,9 @@ sectionReplay.style.display = "none";
 
 startButton.addEventListener("click", startGame);
 avatarButton.addEventListener("click", selectAvatar);
+okPopup.addEventListener('click', () => popup.classList.remove("open-popup"))
 laptopButton.addEventListener("click", () => attacks("laptop"));
 wandButton.addEventListener("click", () => attacks("wand"));
 cubeButton.addEventListener("click", () => attacks("cube"));
 replayButton.addEventListener("click", replayGame);
+
