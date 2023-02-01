@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>CombaTitems</title>
-    </head>
-    <body>
-        <section id="start-game">
-            <h1>CombaTitems</h1>
-            <button id="start-btn">Start</button>
-        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CombaTitems</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon" href="./assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="start-game">
+      <h1>CombaTitems</h1>
+      <button id="start-btn">Start</button>
+    </section>
 
-        <section id="select-avatar">
-            <h2>Choose your avatar...</h2>
+    <section id="select-avatar">
+      <h2>Choose your avatar...</h2>
 
-            <label for="samu">Samu</label>
-            <input type="radio" name="avatar" id="samu" />
-            
-            <label for="gary">Gary</label>
-            <input type="radio" name="avatar" id="gary" />
-            
-            <label for="teban">Teban</label>
-            <input type="radio" name="avatar" id="teban" />
+      <label for="samu">Samu</label>
+      <input type="radio" name="avatar" id="samu" />
 
-            <button id="avatar-btn">Select</button>
-        </section>
+      <label for="gary">Gary</label>
+      <input type="radio" name="avatar" id="gary" />
 
-        <section id="select-attack">
-            <h2>Select your attack...</h2>
+      <label for="teban">Teban</label>
+      <input type="radio" name="avatar" id="teban" />
 
-            <p>Your avatar <span id="player-avatar"></span> has <span id="player-lives">3</span> lives</p>
-            <p>The enemy <span id="enemy-avatar"></span> has <span id="enemy-lives">3</span> lives</p>
+      <button id="avatar-btn">Select</button>
+    </section>
 
-            <p>
-                <button id="laptop-btn">Laptop 💻</button>
-                <button id="wand-btn">Wand 🪄</button>
-                <button id="cube-btn">Cube 💠</button>
-            </p>
-        </section>
+    <section id="select-attack">
+      <h2>Select your attack...</h2>
 
-        <section id="messages">
-        </section>
+      <p>
+        Your avatar <span id="player-avatar"></span> has
+        <span id="player-lives">3</span> lives
+      </p>
+      <p>
+        The enemy <span id="enemy-avatar"></span> has
+        <span id="enemy-lives">3</span> lives
+      </p>
 
-        <section id="replay">
-            <button id="replay-btn">Replay</button>
-        </section>
+      <p>
+        <button id="laptop-btn">Laptop 💻</button>
+        <button id="wand-btn">Wand 🪄</button>
+        <button id="cube-btn">Cube 💠</button>
+      </p>
+    </section>
 
-        <script src="./src/script.js"></script>
-    </body>
+    <section id="messages"></section>
+
+    <section id="replay">
+      <button id="replay-btn">Replay</button>
+    </section>
+
+    <script src="./src/script.js"></script>
+  </body>
 </html>

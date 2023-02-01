@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../assets/background.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Black Ops One", cursive;
+}
+
+#start-game {
+  font-size: 500%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#start-game button {
+    font-family: "Black Ops One", cursive;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+#start-game button:hover {
+    background: #5B7479;
+    color: #fff;
+}
